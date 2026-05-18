@@ -10,7 +10,7 @@ Rosbridge WebSocket server started on port 9090
 Installation of LLM --> Claude Desktop
 
 
-'''
+```text
 [ PC Windows ]                                     [ PC Linux ]
 +-------------------+                              +----------------------+
 |  Claude Desktop   |                              |  Rosbridge Server    |
@@ -20,7 +20,7 @@ Installation of LLM --> Claude Desktop
 |  Serveur MCP      |============================> |  Environnement ROS 2 |
 |  (Python/JS)      |   (WebSocket/JSON)           |  (Gazebo / Nav2)     |
 +-------------------+                              +----------------------+
-'''
+```
 
 ---
 
