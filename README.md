@@ -1,4 +1,4 @@
-## Internship schedule 
+# Internship schedule 
 
 - Installation and configuration of the selected ROS MCP Server solution.
 	Connection with a simulated (first) and real (second) ROS2 environment.
@@ -11,9 +11,15 @@
 
 L'architecture de ton projet : Expliquer brièvement comment Claude sur Windows communique avec ta VM Linux (en mentionnant l'adresse IP, le port 9090 de Rosbridge, 
 
-- #### PC linux :
-Installtion of Gazebo and Rviz and Rosbridge 
-Adresse IP (command : hostname -I) : 192.168.10.108  
+#### PC linux :
+Ubuntu 22.04, ROS 2 Jazzy
+Installtion of Gazebo Harmonic (verison 8), Rviz (version 14.1.20.) and Rosbridge 
+IP adress (command :  hostname -I) : 192.168.10.108  
 Rosbridge WebSocket server started on port 9090  
 
-- #### PC Windows : LLM installation --> Claude Desktop
+#### PC Windows :
+Installation of LLM --> Claude Desktop
+
+
+
+
