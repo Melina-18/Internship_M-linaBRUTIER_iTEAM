@@ -11,8 +11,8 @@
 
 L'architecture de ton projet : Expliquer brièvement comment Claude sur Windows communique avec ta VM Linux (en mentionnant l'adresse IP, le port 9090 de Rosbridge, 
 
-- PC linux : Gazebo, RViz, Rosbridge
-Adresse IP (command : hostname -I) : 192.168.10.108
-Rosbridge WebSocket server started on port 9090
+- PC linux : Gazebo, RViz, Rosbridge  
+Adresse IP (command : hostname -I) : 192.168.10.108  
+Rosbridge WebSocket server started on port 9090  
 
 - PC Windows : LLM installation --> Claude Desktop
