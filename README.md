@@ -3,8 +3,8 @@
 #### PC linux :
 Ubuntu 22.04, ROS 2 Jazzy  
 Installtion of Gazebo Harmonic (verison 8), Rviz (version 14.1.20.) and Rosbridge (version 2.6.0)  
-IP address (command :  hostname -I) : 192.168.10.108  
 Rosbridge WebSocket server started on port 9090  
+IP address (command :  hostname -I) : 192.168.10.108  
 
 #### PC Windows :
 Installation of LLM --> Claude Desktop
