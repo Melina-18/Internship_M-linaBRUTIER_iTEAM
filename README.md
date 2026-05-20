@@ -1,4 +1,4 @@
-# Internship schedule 
+# Project Architecture and Environment Setup
 
 #### PC linux :
 Ubuntu 22.04, ROS 2 Jazzy  
