@@ -7,7 +7,7 @@ Rosbridge WebSocket server started on port 9090
 IP address (command :  hostname -I) : 192.168.10.108  
 
 #### PC Windows :
-Installation of LLM --> Claude Desktop
+Installation of LLM --> Claude Desktop / Chat GPT / Local LLM
 
 
 ```text
