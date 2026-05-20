@@ -34,10 +34,6 @@ To resolve this network communication issue, we use **ngrok**, a tool that creat
 
 $$\text{ChatGPT (Cloud)} \longrightarrow \text{Ngrok Public Link} \longrightarrow \text{Your PC (Local)} \longrightarrow \text{MCP Server} \longrightarrow \text{ROS 2 / Gazebo}$$
 
-ChatGPT (Cloud) ──► Ngrok Public Link ──► Your PC (Local) ──► MCP Server ──► ROS 2 / Gazebo
-
-ChatGPT (Cloud) ──► Ngrok Public Link ──► Your PC (Local) ──► MCP Server ──► ROS 2 / Gazebo
-
 
 
 
