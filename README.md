@@ -11,15 +11,17 @@ Installation of LLM --> Claude Desktop / Chat GPT / Local LLM
 
 
 ```text
-[ PC Windows ]                                     [ PC Linux ]
+
+[ Windows PC ]                                      [ Linux PC ]
 +-------------------+                              +----------------------+
-|  Claude Desktop   |                              |  Rosbridge Server    |
-|        |          |                              |  (Port 9090)         |
-|  (Client MCP)     |                              |        |             |
-|        v          |      Connexion Réseau        |        v             |
-|  Serveur MCP      |============================> |  Environnement ROS 2 |
-|  (Python/JS)      |   (WebSocket/JSON)           |  (Gazebo / Nav2)     |
+|  Claude Desktop   |                              |   Rosbridge Server   |
+|        |          |                              |   (Port 9090)        |
+|  (MCP Client)     |                              |        |             |
+|        v          |      Network Connection      |        v             |
+|  MCP Server       |============================> |  ROS 2 Environment   |
+|  (Python/JS)      |       (WebSocket/JSON)       |  (Gazebo / Nav2)     |
 +-------------------+                              +----------------------+
+
 ```
 
 ---
