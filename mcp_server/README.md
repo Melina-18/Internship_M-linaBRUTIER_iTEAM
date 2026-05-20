@@ -34,8 +34,7 @@ Unlike Claude Desktop, which runs locally on the machine, **ChatGPT** (OpenAI's 
 To resolve this network communication issue, we use **ngrok**, a tool that creates a secure tunnel and temporarily exposes our local server to the Internet.
 
 
-$$\text{ChatGPT (Cloud)} \longrightarrow \text{Ngrok Public Link} \longrightarrow \text{Your PC (Local)} \longrightarrow \text{MCP Server} \longrightarrow \text{ROS 2 / Gazebo}$$
-
+$$\text{ChatGPT (Cloud)} \longrightarrow \text{Ngrok Public Link} \longrightarrow \text{Your PC (Local)} \longrightarrow \text{MCP Server} \longrightarrow \text{Rosbridge (Port 9090)} \longrightarrow \text{ROS 2 / Gazebo}$$
 
 
 
