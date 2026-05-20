@@ -6,6 +6,8 @@ This project uses the `uvx` tool to execute the `ros-mcp` MCP server in an ephem
 
 To reproduce this configuration on Windows, the `%APPDATA%\Claude\claude_desktop_config.json` file must be configured as follows:
 
+$$\text{Claude Desktop (Local)} \longrightarrow \text{MCP Server} \longrightarrow \text{Rosbridge (Port 9090)} \longrightarrow \text{ROS 2 / Gazebo}$$
+
 ```json
 {
   "mcpServers": {
