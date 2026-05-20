@@ -1,12 +1,12 @@
 # Project Architecture and Environment Setup
 
-#### PC linux :
+#### Linux PC :
 Ubuntu 22.04, ROS 2 Jazzy  
-Installtion of Gazebo Harmonic (verison 8), Rviz (version 14.1.20.) and Rosbridge (version 2.6.0)  
+Installtion of Gazebo Harmonic (version 8), Rviz (version 14.1.20.) and Rosbridge (version 2.6.0)  
 Rosbridge WebSocket server started on port 9090  
 IP address (command :  hostname -I) : 192.168.10.108  
 
-#### PC Windows :
+#### Windows PC :
 Installation of LLM --> Claude Desktop / Chat GPT / Local LLM
 
 
