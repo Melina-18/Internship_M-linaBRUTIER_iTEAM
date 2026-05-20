@@ -36,10 +36,6 @@ $$\text{ChatGPT (Cloud)} \longrightarrow \text{Lien Public Ngrok} \longrightarro
 
 
 
-### Architecture de communication
-
-
-
 
 
 
