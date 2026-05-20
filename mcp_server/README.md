@@ -23,5 +23,7 @@ To reproduce this configuration on Windows, the `%APPDATA%\Claude\claude_desktop
   }
 }
 
+```
+
 
 ## Chat GPT Desktop Configuration
