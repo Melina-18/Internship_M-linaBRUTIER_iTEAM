@@ -29,18 +29,14 @@ $$\text{Claude Desktop (Local)} \longrightarrow \text{MCP Server} \longrightarro
 
 ### How to Run the Simulation
 
-1. Run the following commands in your terminal to start the simulation environment:  
+Follow these steps to launch the simulation environment and connect it to the LLM:
 
-   ```
-glxinfo -B
-ros2 launch robotnik_gazebo_ignition spawn_world.launch.py world :=demo gui:=true
-ros2 launch robotnik_gazebo_ignition spawn_robot.launch.py robot_id:=robot robot:=rbsummit robot_model:=rbsummit run_rviz:=true low_performance_simulation:=false
-ros2 launch robotnik_simulation_bringup laser_filters.launch.py
-ros2 launch robotnik_simulation_localization localization.launch.py
-ros2 launch robotnik_simulation_navigation navigation.launch.py
+1. **Check your graphics configuration** (optional, to ensure hardware acceleration is active):
+   ```bash
+   glxinfo -B
 
-   bash 
-
+   Launch the Gazebo world
+ros2 launch robotnik_gazebo_ignition spawn_world.launch.py world:=demo gui:=true
 
 
 ## Chat GPT Desktop Configuration
