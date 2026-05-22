@@ -51,7 +51,16 @@ Follow these steps to launch the simulation environment and connect it to the LL
    ros2 launch robotnik_simulation_navigation navigation.launch.py
 
 5. **Start the LLM interface:**
-Once the simulation is fully running, launch Claude Desktop to start interacting with the robot.  
+Once the simulation is fully running, launch Claude Desktop to start interacting with the robot.
+
+### Connecting Claude Desktop to the Robot
+
+Once the simulation and Claude Desktop are running, you need to instruct the LLM to connect to your local ROS 2 environment. 
+Send the following prompt to **Claude**:
+> "Please connect to my ROS 2 robot using this IP address: `ws://192.168.10.108:9090`."
+Claude will then use the MCP server to initialize the WebSocket connection through Rosbridge and confirm that it can successfully monitor and control the robot.
+
+
 
 
 
