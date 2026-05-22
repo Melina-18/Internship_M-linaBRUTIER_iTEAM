@@ -1,7 +1,7 @@
 # Simulation Results & LLM Comparison
 
 
-### Claude Simulation 
+## Claude Simulation 
 
 
 
