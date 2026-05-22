@@ -19,7 +19,7 @@ AAnd after moving forward 10 meters, it must be able to plot a path that avoids 
 <img width="1314" height="520" alt="image" src="https://github.com/user-attachments/assets/d8fe3bdd-4170-448a-b435-0cf0ba0da8a0" />
 <img width="1309" height="629" alt="image" src="https://github.com/user-attachments/assets/bd9629eb-fc81-43d2-b5e3-1124d505ff86" />
 
-<img width="1309" height="629" alt="image" src="https://github.com/user-attachments/assets/0d941b36-0b54-4b3b-823e-0ec7b7099267" />
+<img width="1600" height="900" alt="WhatsApp Image 2026-05-22 at 11 27 45" src="https://github.com/user-attachments/assets/1052c520-3aca-4ab9-8e57-8aec4aa13dfe" />
 <img width="1600" height="900" alt="WhatsApp Image 2026-05-22 at 11 27 13" src="https://github.com/user-attachments/assets/2c0e625d-1941-4a20-adcf-22645fd800fc" />
 
 
