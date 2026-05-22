@@ -76,8 +76,32 @@ $$\text{ChatGPT (Cloud)} \longrightarrow \text{Ngrok Public Link} \longrightarro
 
 
 
+### Connecting ChatGPT to the ROS 2 Server
+
+To connect the ChatGPT Cloud model to your local MCP server, you need to set up a network bridge on your Windows PC and expose it using **ngrok**. 
+
+Follow these steps in order:
+
+#### 1. Windows PC Setup
+
+##### Step A: Port Forwarding (Command Prompt - Admin)
+Open **Command Prompt as Administrator** and run the following command to route the local port to your Linux machine's IP address:
+```cmd
+netsh interface portproxy add v4tov4 listenport=9090 listenaddress=127.0.0.1 connectport=9090 connectaddress=192.168.10.108
+
+#### Step B: Port Forwarding (Command Prompt - Admin)
+Open **PowerShell** and set the environment variables to point to your Rosbridge server, then launch the ROS MCP server:
+$env:ROSBRIDGE_HOST="192.168.10.108"
+$env:ROSBRIDGE_PORT="9090"
+uvx ros-mcp --transport streamable-http --host 127.0.0.1 --port 9000
 
 
+Step C: Expose the Server via ngrok (Terminal)
+Open a new terminal and start the ngrok tunnel to make your local MCP server accessible from the cloud:
+ngrok http --url=untreated-cosmic-underfoot.ngrok-free.dev 127.0.0.1:9000
+
+2. Linux PC Setup (Robot & Rosbridge)
+Ensure that your ROS 2 simulation and the Rosbridge WebSocket server are up and running on your Linux machine (IP: 192.168.10.108) on port 9090.
 
 
 
