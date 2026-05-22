@@ -35,14 +35,22 @@ Follow these steps to launch the simulation environment and connect it to the LL
    ```bash
    glxinfo -B
 
-  
-   ros2 launch robotnik_gazebo_ignition spawn_world.launch.py world:=demo gui:=true          (Launch the Gazebo world)
+
+2. **Launch the Gazebo world**
+   ```bash
+   ros2 launch robotnik_gazebo_ignition spawn_world.launch.py world:=demo gui:=true    
+
+3. **Spawn the robot and start RViz (in a new terminal):**
+   ```bash
    ros2 launch robotnik_gazebo_ignition spawn_robot.launch.py robot_id:=robot robot:=rbsummit robot_model:=rbsummit run_rviz:=true low_performance_simulation:=false
+
+4. **Launch the sensor filters, localization, and navigation stacks (in separate terminals):**
+   ```bash
    ros2 launch robotnik_simulation_bringup laser_filters.launch.py
    ros2 launch robotnik_simulation_localization localization.launch.py
    ros2 launch robotnik_simulation_navigation navigation.launch.py
 
-Start the LLM interface:
+5. **Start the LLM interface:**
 Once the simulation is fully running, launch Claude Desktop to start interacting with the robot.  
 
 
