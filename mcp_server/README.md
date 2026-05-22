@@ -54,7 +54,7 @@ Follow these steps to launch the simulation environment and connect it to the LL
 
 Once the simulation is fully running, launch Claude Desktop to start interacting with the robot.
 
-7. **Connecting Claude Desktop to the Robot**
+6. **Connecting Claude Desktop to the Robot**
 
 Once the simulation and Claude Desktop are running, you need to instruct the LLM to connect to your local ROS 2 environment. 
 Send the following prompt to **Claude**:
