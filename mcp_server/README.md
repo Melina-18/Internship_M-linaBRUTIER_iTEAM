@@ -97,11 +97,11 @@ $env:ROSBRIDGE_PORT="9090"
 uvx ros-mcp --transport streamable-http --host 127.0.0.1 --port 9000
 
 
-Step C: Expose the Server via ngrok (Terminal)
+#### Step C: Expose the Server via ngrok (Terminal)
 Open a new terminal and start the ngrok tunnel to make your local MCP server accessible from the cloud:
 ngrok http --url=untreated-cosmic-underfoot.ngrok-free.dev 127.0.0.1:9000
 
-2. Linux PC Setup (Robot & Rosbridge)
+#### 2. Linux PC Setup (Robot & Rosbridge)
 Ensure that your ROS 2 simulation and the Rosbridge WebSocket server are up and running on your Linux machine (IP: 192.168.10.108) on port 9090.
 
 
