@@ -42,4 +42,4 @@ It is truly difficult to get a simulation where everything works perfectly right
 
 However, during many of these simulation runs—as shown above—the robot frequently claims it has arrived at its destination when it hasn't actually moved, or it only completes half of the path. When pointed out, it does correct its mistake, but this troubleshooting process takes a significant amount of time and defeats the purpose of it being autonomous.
 
-
+This is just one example among many; Claude is more comprehensive in its explanations and procedures, but it is slower.
