@@ -28,8 +28,12 @@ Here, the robot paused halfway through the journey before resuming its journey t
 
 ## Chat GPT Simulation 
 
-<img width="1600" height="900" alt="WhatsApp Image 2026-05-22 at 12 26 58" src="https://github.com/user-attachments/assets/0bd45e14-7a09-4952-a673-04ca428c0407" />
+<img width="1218" height="470" alt="image" src="https://github.com/user-attachments/assets/165c43d5-3459-4314-a43d-0ffd2ee33cb6" />
+<img width="1253" height="761" alt="image" src="https://github.com/user-attachments/assets/b0edc5d2-7ae5-49bd-9768-f8957420d264" />
+
 <img width="1600" height="900" alt="WhatsApp Image 2026-05-22 at 12 27 29" src="https://github.com/user-attachments/assets/cda1a5cf-ad2f-4234-bd86-91adfbbe7311" />
+<img width="1600" height="900" alt="WhatsApp Image 2026-05-22 at 12 26 58" src="https://github.com/user-attachments/assets/0bd45e14-7a09-4952-a673-04ca428c0407" />
+
 
 
 
