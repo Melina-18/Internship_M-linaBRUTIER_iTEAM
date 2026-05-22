@@ -88,13 +88,14 @@ Follow these steps in order:
 Open **Command Prompt as Administrator** and run the following command to route the local port to your Linux machine's IP address:
 ```cmd
 netsh interface portproxy add v4tov4 listenport=9090 listenaddress=127.0.0.1 connectport=9090 connectaddress=192.168.10.108
+```
 
 #### Step B: Port Forwarding (Command Prompt - Admin)
 Open **PowerShell** and set the environment variables to point to your Rosbridge server, then launch the ROS MCP server:
 $env:ROSBRIDGE_HOST="192.168.10.108"
 $env:ROSBRIDGE_PORT="9090"
 uvx ros-mcp --transport streamable-http --host 127.0.0.1 --port 9000
-
+```
 
 Step C: Expose the Server via ngrok (Terminal)
 Open a new terminal and start the ngrok tunnel to make your local MCP server accessible from the cloud:
