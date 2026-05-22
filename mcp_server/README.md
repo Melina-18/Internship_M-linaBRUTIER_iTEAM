@@ -29,14 +29,17 @@ $$\text{Claude Desktop (Local)} \longrightarrow \text{MCP Server} \longrightarro
 
 ### How to Run the Simulation
 
-1. Run the following commands in your terminal to start the simulation environment:
+1. Run the following commands in your terminal to start the simulation environment:  
+
+   ```
 glxinfo -B
 ros2 launch robotnik_gazebo_ignition spawn_world.launch.py world :=demo gui:=true
 ros2 launch robotnik_gazebo_ignition spawn_robot.launch.py robot_id:=robot robot:=rbsummit robot_model:=rbsummit run_rviz:=true low_performance_simulation:=false
 ros2 launch robotnik_simulation_bringup laser_filters.launch.py
 ros2 launch robotnik_simulation_localization localization.launch.py
 ros2 launch robotnik_simulation_navigation navigation.launch.py
-   ```bash 
+
+   bash 
 
 
 
