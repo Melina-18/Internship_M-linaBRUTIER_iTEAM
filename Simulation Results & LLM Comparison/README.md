@@ -1,5 +1,5 @@
 # Simulation Results & LLM Comparison
-
+We will ask the chatbot to perform the same actions on two different LLMs: ChatGPT and Claude.  
 
 ## Claude Simulation 
 
