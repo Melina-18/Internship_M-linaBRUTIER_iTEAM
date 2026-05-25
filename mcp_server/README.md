@@ -50,14 +50,15 @@ Follow these steps to launch the simulation environment and connect it to the LL
    ros2 launch robotnik_simulation_localization localization.launch.py
    ros2 launch robotnik_simulation_navigation navigation.launch.py
 
-5. **Launch the Rosbridge WebSocket server (in a new terminal):**  
-   This server opens port 9090 to allow external interfaces and MCP servers to communicate with ROS 
+5. **Launch the Rosbridge WebSocket server (in a new terminal):**
+
+This server opens port 9090 to allow external interfaces and MCP servers to communicate with ROS 
    ```bash
    source /opt/ros/jazzy/setup.bash
    ros2 launch rosbridge_server rosbridge_websocket_launch.xml
    ```
 
-6. **Start the LLM interface:**
+7. **Start the LLM interface:**
  
 Once the simulation is fully running, launch Claude Desktop to start interacting with the robot.
 
