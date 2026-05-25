@@ -50,7 +50,7 @@ Follow these steps to launch the simulation environment and connect it to the LL
    ros2 launch robotnik_simulation_localization localization.launch.py
    ros2 launch robotnik_simulation_navigation navigation.launch.py
 
-5. **Launch the Rosbridge WebSocket server (in a new terminal):**
+5. **Launch the Rosbridge WebSocket server (in a new terminal):**  
    This server opens port 9090 to allow external interfaces and MCP servers to communicate with ROS 
    ```bash
    source /opt/ros/jazzy/setup.bash
