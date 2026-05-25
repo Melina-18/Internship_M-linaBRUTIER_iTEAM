@@ -57,10 +57,12 @@ Follow these steps to launch the simulation environment and connect it to the LL
    ros2 launch rosbridge_server rosbridge_websocket_launch.xml
    ```
 
-6. **Start the LLM interface:**  
+6. **Start the LLM interface:**
+ 
 Once the simulation is fully running, launch Claude Desktop to start interacting with the robot.
 
-7. **Connecting Claude Desktop to the Robot**  
+8. **Connecting Claude Desktop to the Robot**
+
 Once the simulation and Claude Desktop are running, you need to instruct the LLM to connect to your local ROS 2 environment. 
 Send the following prompt to **Claude**:
 > "Please connect to my ROS 2 robot using this IP address: `ws://192.168.10.108:9090`."
