@@ -75,14 +75,37 @@ To resolve this network communication issue, we use **ngrok**, a tool that creat
 $$\text{ChatGPT (Cloud)} \longrightarrow \text{Ngrok Public Link} \longrightarrow \text{Your PC (Local)} \longrightarrow \text{MCP Server} \longrightarrow \text{Rosbridge (Port 9090)} \longrightarrow \text{ROS 2 / Gazebo}$$
 
 
-
 ### Connecting ChatGPT to the ROS 2 Server to Run the Simulation
 
 To connect the ChatGPT Cloud model to your local MCP server, you need to set up a network bridge on your Windows PC and expose it using **ngrok**. 
 
 Follow these steps in order:
 
-#### 1. Windows PC Setup
+#### 1. Linux PC Setup (Robot & Rosbridge)
+Ensure that your ROS 2 simulation and the Rosbridge WebSocket server are up and running on your Linux machine (IP: 192.168.10.108) on port 9090.
+
+1. **Check your graphics configuration** (optional, to ensure hardware acceleration is active):
+   ```bash
+   glxinfo -B
+
+
+2. **Launch the Gazebo world**
+   ```bash
+   ros2 launch robotnik_gazebo_ignition spawn_world.launch.py world:=demo gui:=true    
+
+3. **Spawn the robot and start RViz (in a new terminal):**
+   ```bash
+   ros2 launch robotnik_gazebo_ignition spawn_robot.launch.py robot_id:=robot robot:=rbsummit robot_model:=rbsummit run_rviz:=true low_performance_simulation:=false
+
+4. **Launch the sensor filters, localization, and navigation stacks (in separate terminals):**
+   ```bash
+   ros2 launch robotnik_simulation_bringup laser_filters.launch.py
+   ros2 launch robotnik_simulation_localization localization.launch.py
+   ros2 launch robotnik_simulation_navigation navigation.launch.py
+
+
+
+#### 2. Windows PC Setup (Start the LLM interface)
 
 ##### Step A: Port Forwarding (Command Prompt - Admin)
 Open **Command Prompt as Administrator** and run the following command to route the local port to your Linux machine's IP address:
@@ -102,8 +125,7 @@ Open a new terminal and start the ngrok tunnel to make your local MCP server acc
 ngrok http --url=untreated-cosmic-underfoot.ngrok-free.dev 127.0.0.1:9000
 ```
 
-#### 2. Linux PC Setup (Robot & Rosbridge)
-Ensure that your ROS 2 simulation and the Rosbridge WebSocket server are up and running on your Linux machine (IP: 192.168.10.108) on port 9090.
+
 
 
 
