@@ -142,7 +142,8 @@ ngrok http --url=untreated-cosmic-underfoot.ngrok-free.dev 127.0.0.1:9000
 ```
 
 
-7. **Connecting Claude Desktop to the Robot**
+
+#### 3. Connecting Chat GPT to the Robot
 
 Once the simulation and Chat GPT are running, you need to instruct the LLM to connect to your local ROS 2 environment. 
 Send the following prompt to **Chat GPT**:
