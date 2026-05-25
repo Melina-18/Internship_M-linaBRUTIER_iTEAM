@@ -50,3 +50,6 @@ However, during many of these simulation runs—as shown above—the robot frequ
 This is just one example among many; Claude is more comprehensive in its explanations and procedures, but it is slower.
 
 I think we'll need to change some settings to improve performance. 
+
+
+All the information are here : https://docs.google.com/spreadsheets/d/1-6duBYCitYhOyMOqxkJYvgAtaIOxp_dguyQsaNE2UYo/edit?gid=0#gid=0
