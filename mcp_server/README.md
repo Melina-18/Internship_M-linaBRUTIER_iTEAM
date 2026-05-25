@@ -27,7 +27,7 @@ $$\text{Claude Desktop (Local)} \longrightarrow \text{MCP Server} \longrightarro
 
 ```
 
-### How to Run the Simulation
+### Connecting Claude to the ROS 2 Server to Run the Simulation
 
 Follow these steps to launch the simulation environment and connect it to the LLM:
 
@@ -76,7 +76,7 @@ $$\text{ChatGPT (Cloud)} \longrightarrow \text{Ngrok Public Link} \longrightarro
 
 
 
-### Connecting ChatGPT to the ROS 2 Server
+### Connecting ChatGPT to the ROS 2 Server to Run the Simulation
 
 To connect the ChatGPT Cloud model to your local MCP server, you need to set up a network bridge on your Windows PC and expose it using **ngrok**. 
 
@@ -90,14 +90,14 @@ Open **Command Prompt as Administrator** and run the following command to route 
 netsh interface portproxy add v4tov4 listenport=9090 listenaddress=127.0.0.1 connectport=9090 connectaddress=192.168.10.108
 ```
 
-#### Step B: Port Forwarding (Command Prompt - Admin)
+##### Step B: Port Forwarding (Command Prompt - Admin)
 Open **PowerShell** and set the environment variables to point to your Rosbridge server, then launch the ROS MCP server:
 $env:ROSBRIDGE_HOST="192.168.10.108"
 $env:ROSBRIDGE_PORT="9090"
 uvx ros-mcp --transport streamable-http --host 127.0.0.1 --port 9000
 
 
-#### Step C: Expose the Server via ngrok (Terminal)
+##### Step C: Expose the Server via ngrok (Terminal)
 Open a new terminal and start the ngrok tunnel to make your local MCP server accessible from the cloud:
 ngrok http --url=untreated-cosmic-underfoot.ngrok-free.dev 127.0.0.1:9000
 
