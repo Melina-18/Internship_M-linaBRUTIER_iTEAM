@@ -6,8 +6,7 @@ PC 1 (Ollama)                    PC 2 (Linux/ROS)
 │  localhost:11434│              │  Gazebo + Rviz       │
 └─────────────────┘              └──────────────────────┘
 
-
-`bash 
+```json
 import requests
 
 response = requests.post(
@@ -21,5 +20,5 @@ response = requests.post(
 
 print(response.status_code)
 print(response.text)
-
 ```
+
