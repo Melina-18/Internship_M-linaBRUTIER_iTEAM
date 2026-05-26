@@ -1,4 +1,3 @@
-
 ## Claude Desktop Configuration
 
 To reproduce this configuration on Windows, the `%APPDATA%\Claude\claude_desktop_config.json` file must be configured as follows:
