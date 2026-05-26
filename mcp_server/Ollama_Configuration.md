@@ -1,11 +1,13 @@
 ## Local LLM : Ollama Desktop Configuration
 
+<div align="center">
 ```text
-PC 1 (Windows - Ollama)                    PC 2 (Linux - ROS)
-┌─────────────────┐              ┌──────────────────────┐
-│  Ollama Server  │◄────HTTP────►│  Script Python/ROS   │
-│  localhost:11434│              │  Gazebo + Rviz       │
-└─────────────────┘              └──────────────────────┘
+PC 1 (Windows - Ollama)             PC 2 (Linux - ROS)
+
+┌───────────────────┐               ┌───────────────────┐
+│   Ollama Server   │<==== HTTP ===>│ Script Python/ROS │
+│  localhost:11434  │               │   Gazebo + Rviz   │
+└───────────────────┘               └───────────────────┘
 ```
 
 All control and routing are handled from the Linux PC.  
