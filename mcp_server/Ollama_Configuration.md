@@ -7,6 +7,7 @@ The Windows PC is used solely to run the Ollama engine because it didn't have en
 
 ```text
 PC 1 (Windows - Ollama)             PC 2 (Linux - ROS)
+
 ┌───────────────────┐               ┌───────────────────┐
 │   Ollama Server   │<==== HTTP ===>│ Script Python/ROS │
 │  localhost:11434  │               │   Gazebo + Rviz   │
