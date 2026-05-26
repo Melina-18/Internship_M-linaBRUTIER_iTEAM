@@ -14,32 +14,37 @@ OLLAMA_URL = "http://192.168.10.106:11434/api/chat"
 MODEL = "llama3.2"
 
 SYSTEM_PROMPT = """
-Tu es un assistant qui contrôle un robot ROS2 dans une simulation.
-Quand l'utilisateur te donne une instruction de navigation, tu dois répondre UNIQUEMENT en JSON, sans aucun texte autour.
-Format de réponse :
+You are an assistant that controls a ROS2 robot in a simulation.
+When the user gives you a navigation instruction, you must respond ONLY in JSON, with no text around it.
+Response format:
 {
   "action": "navigate",
   "x": 0.0,
   "y": 0.0,
-  "description": "explication courte"
+  "description": "short explanation"
 }
-La carte fait environ 37m x 35m. L'origine est x=-18.207, y=-15.425.
-Exemples de positions :
-- "va au centre" -> x=0.0, y=0.0
-- "va en haut à droite" -> x=5.0, y=5.0
-- "va en bas à gauche" -> x=-5.0, y=-5.0
-Si l'utilisateur dit "stop" ou "arrête", réponds :
-{"action": "stop", "x": 0.0, "y": 0.0, "description": "arrêt"}
+The STRICT map limits are:
+- x between -18.0 and +18.0
+- y between -15.0 and +15.0
+Never exceed these limits!
+Examples:
+- "go to the center" -> x=0.0, y=0.0
+- "go to the top right" -> x=10.0, y=8.0
+- "go to the bottom left" -> x=-10.0, y=-8.0
+- "go up" -> x=0.0, y=8.0
+- "go right" -> x=10.0, y=0.0
+If the user says "stop", respond with:
+{"action": "stop", "x": 0.0, "y": 0.0, "description": "stop"}
 """
 
 class RobotOllamaNode(Node):
     def __init__(self):
         super().__init__('robot_ollama_node')
-        self.nav_client = ActionClient(self, NavigateToPose, '/robot/navigate_to_pose')
+        self.nav_client = ActionClient(self, NavigateToPose, 'robot/navigate_to_pose')
         self.conversation = []
-        print("Robot Ollama Node démarré !")
-        print("Tu peux parler au robot en français.")
-        print("Tape 'quitter' pour arrêter.\n")
+        print("Robot Ollama Node started!")
+        print("You can talk to the robot in English.")
+        print("Type 'quit' to stop.\n")
 
     def ask_ollama(self, user_input):
         self.conversation.append({"role": "user", "content": user_input})
@@ -57,32 +62,32 @@ class RobotOllamaNode(Node):
     def send_goal(self, x, y):
         goal_msg = NavigateToPose.Goal()
         goal_msg.pose = PoseStamped()
-        goal_msg.pose.header.frame_id = "map"
+        goal_msg.pose.header.frame_id = "robot_map"
         goal_msg.pose.pose.position.x = x
         goal_msg.pose.pose.position.y = y
         goal_msg.pose.pose.orientation.w = 1.0
         self.nav_client.wait_for_server()
         self.nav_client.send_goal_async(goal_msg)
-        print(f"Navigation vers x={x}, y={y} envoyée !")
+        print(f"Navigating to x={x}, y={y} !")
 
     def run(self):
         while True:
-            user_input = input("\nToi : ")
-            if user_input.lower() == "quitter":
-                print("Au revoir !")
+            user_input = input("\nYou: ")
+            if user_input.lower() == "quit":
+                print("Goodbye!")
                 break
-            print("Ollama réfléchit...")
+            print("Ollama is thinking...")
             reply = self.ask_ollama(user_input)
-            print(f"Ollama : {reply}")
+            print(f"Ollama: {reply}")
             try:
                 command = json.loads(reply)
                 if command["action"] == "navigate":
                     print(f"-> {command['description']}")
                     self.send_goal(command["x"], command["y"])
                 elif command["action"] == "stop":
-                    print("-> Robot arrêté")
+                    print("-> Robot stopped")
             except:
-                print("(réponse non JSON — pas de commande envoyée)")
+                print("(non-JSON response — no command sent)")
 
 def main():
     rclpy.init()
