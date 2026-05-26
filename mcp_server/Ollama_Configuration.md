@@ -1,17 +1,18 @@
 ## Local LLM : Ollama Desktop Configuration
 
+All control and routing are handled from the Linux PC.  
+The Windows PC is used solely to run the Ollama engine because it didn't have enough RAM to run Ollama AND an interface at the same time. 
+
 <div align="center">
+
 ```text
 PC 1 (Windows - Ollama)             PC 2 (Linux - ROS)
-
 ┌───────────────────┐               ┌───────────────────┐
 │   Ollama Server   │<==== HTTP ===>│ Script Python/ROS │
 │  localhost:11434  │               │   Gazebo + Rviz   │
 └───────────────────┘               └───────────────────┘
 ```
-
-All control and routing are handled from the Linux PC.  
-The Windows PC is used solely to run the Ollama engine because it didn't have enough RAM to run Ollama AND an interface at the same time. 
+</div>
 
 #### 1. Ollama installation
 - llama3.2 : Main model (lightweight)  
