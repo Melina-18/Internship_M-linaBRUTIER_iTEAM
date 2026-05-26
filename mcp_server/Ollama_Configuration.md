@@ -12,6 +12,7 @@ PC 1 (Windows - Ollama)             PC 2 (Linux - ROS)
 │  localhost:11434  │               │   Gazebo + Rviz   │
 └───────────────────┘               └───────────────────┘
 ```
+
 </div>
 
 #### 1. Ollama installation
