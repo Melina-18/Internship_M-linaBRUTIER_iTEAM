@@ -7,7 +7,7 @@ This project uses the `uvx` tool to execute the `ros-mcp` MCP server in an ephem
 We have use  3 differents IA : 
 - Claude
 - Chat GPT
-- Ollama
+- Ollama (Local)
 
 
 
