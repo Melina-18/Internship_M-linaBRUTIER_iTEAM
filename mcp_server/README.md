@@ -153,3 +153,18 @@ The robot is now connected to the LLM (AI) and is ready to receive commands.
 
 
 
+
+
+
+
+## Local LLM : Ollama Desktop Configuration
+
+
+
+
+
+
+
+
+
+
