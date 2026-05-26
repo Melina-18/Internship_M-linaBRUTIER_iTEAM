@@ -7,7 +7,7 @@ PC 1 (Ollama)                    PC 2 (Linux/ROS)
 └─────────────────┘              └──────────────────────┘
 
 
-'bash 
+`bash 
 import requests
 
 response = requests.post(
