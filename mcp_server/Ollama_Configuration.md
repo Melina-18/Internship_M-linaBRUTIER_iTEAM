@@ -12,6 +12,7 @@ PC 1 (Windows - Ollama)             PC 2 (Linux - ROS)
 │   Ollama Server   │<==== HTTP ===>│ Script Python/ROS │
 │  localhost:11434  │               │   Gazebo + Rviz   │
 └───────────────────┘               └───────────────────┘
+
 ```
 
 </div>
