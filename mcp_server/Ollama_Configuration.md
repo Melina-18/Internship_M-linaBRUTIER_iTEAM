@@ -15,41 +15,60 @@ The Windows PC is used solely to run the Ollama engine because it didn't have en
 - llama3.2 : Main model (lightweight)  
 - llama3 : Secondary model (more accurate)  
 
-#### 2. Ollama Configuration (Terminal Windows PC)
-By default, Ollama only listens on localhost. You need to configure it to accept connections from the local network.
-```cmd
-$env:OLLAMA_HOST="0.0.0.0:11434"
-ollama serve
-```
-
-#### 3. Installation on a Linux PC  
+#### 2. Installation on a Linux PC  
 ```bash
 sudo apt install curl -y
 sudo apt install python3 -y
 sudo apt install python3-requests -y
 ```
 
-#### 4. Test 
+
+### Connecting ChatGPT to the ROS 2 Server to Run the Simulation
+#### 1. Windows PC Setup (Start the LLM interface)
+
+In Windows Terminal : 
+    ```cmd
+    $env:OLLAMA_HOST="0.0.0.0:11434"
+    ollama serve
+    ```
+
+
+#### 2. Linux PC Setup (Robot & Rosbridge)
+1. **Check your graphics configuration** (optional, to ensure hardware acceleration is active):
+   ```bash
+   glxinfo -B
+   ```
+
+2. **Launch the Gazebo world**
+   ```bash
+   ros2 launch robotnik_gazebo_ignition spawn_world.launch.py world:=demo gui:=true
+   ```
+
+3. **Spawn the robot and start RViz (in a new terminal):**
+   ```bash
+   ros2 launch robotnik_gazebo_ignition spawn_robot.launch.py robot_id:=robot robot:=rbsummit robot_model:=rbsummit run_rviz:=true low_performance_simulation:=false
+   ```
+
+4. **Launch the sensor filters, localization, and navigation stacks (in separate terminals):**
+   ```bash
+   ros2 launch robotnik_simulation_bringup laser_filters.launch.py
+   ros2 launch robotnik_simulation_localization localization.launch.py
+   ros2 launch robotnik_simulation_navigation navigation.launch.py
+   ```
+   
+5. **Launch the Rosbridge WebSocket server (in a new terminal):**
+   This server opens port 9090 to allow external interfaces and MCP servers to communicate with ROS 
+   ```bash
+   source /opt/ros/jazzy/setup.bash
+   ros2 launch rosbridge_server rosbridge_websocket_launch.xml
+   ```
+
+6. **Configure the folder with instruction**  
 ```bash
-import requests
+    nano robot_ollama.py
+   ```
 
-response = requests.post(
-    "http://192.168.10.106:11434/api/chat",
-    json={
-        "model": "llama3.2",
-        "messages": [{"role": "user", "content": "Dis bonjour en français"}],
-        "stream": False
-    }
-)
-
-print(response.status_code)
-print(response.text)
-```
-
-**Run the test:**
+Ctrl+O, Entrée, Ctrl+X, and lanch :
 ```bash
-python3 test_ollama.py
-```
-
-#### 5. Configuration Ollama on a ROS2 node
-
+python3 robot_ollama.py
+ ```
