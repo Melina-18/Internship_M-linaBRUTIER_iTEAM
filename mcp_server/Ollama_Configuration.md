@@ -15,7 +15,7 @@ The Windows PC is used solely to run the Ollama engine because it didn't have en
 - llama3.2 : Main model (lightweight)  
 - llama3 : Secondary model (more accurate)  
 
-#### 2. Ollama Configuration  
+#### 2. Ollama Configuration (Terminal Windows PC)
 By default, Ollama only listens on localhost. You need to configure it to accept connections from the local network.
 ```cmd
 $env:OLLAMA_HOST="0.0.0.0:11434"
