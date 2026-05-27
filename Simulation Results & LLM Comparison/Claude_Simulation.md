@@ -19,6 +19,8 @@ Here, the robot paused halfway through the journey before resuming its journey t
 <img width="1600" height="900" alt="WhatsApp Image 2026-05-22 at 11 27 13" src="https://github.com/user-attachments/assets/2c0e625d-1941-4a20-adcf-22645fd800fc" />
 
 
+---
+
 I told the robot to move forward 20 meters. It carried out the command while avoiding all the walls.  
 <img width="1090" height="613" alt="image" src="https://github.com/user-attachments/assets/9f39d131-0037-49c5-b641-95ee8bd2c000" />
 
