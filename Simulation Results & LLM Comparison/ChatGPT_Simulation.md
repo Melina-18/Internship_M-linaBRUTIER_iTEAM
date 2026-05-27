@@ -12,3 +12,5 @@
 <img width="1600" height="900" alt="WhatsApp Image 2026-05-22 at 12 26 58" src="https://github.com/user-attachments/assets/0bd45e14-7a09-4952-a673-04ca428c0407" />
 <img width="1600" height="900" alt="WhatsApp Image 2026-05-22 at 12 54 44" src="https://github.com/user-attachments/assets/2c6086a3-97d1-4df9-a215-5a8a09277043" />
 
+
+All the information are here : https://docs.google.com/spreadsheets/d/1-6duBYCitYhOyMOqxkJYvgAtaIOxp_dguyQsaNE2UYo/edit?gid=1476090545#gid=1476090545
