@@ -1,6 +1,6 @@
 ## Ollama Simulation
 
-With this code in the file:  
+In this file **robot_ollama**, we have this code : 
 ```cmd
 import rclpy
 from rclpy.node import Node
