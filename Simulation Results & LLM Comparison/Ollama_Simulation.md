@@ -130,3 +130,8 @@ That is why the robot moves straight ahead instead of to the right. Its initial 
 
 Then I execute this command : **"go to the bottom left"**, we get  
 <img width="1600" height="900" alt="WhatsApp Image 2026-05-27 at 12 42 22" src="https://github.com/user-attachments/assets/e590011a-6bb9-4273-b154-74e6f91b533a" />
+
+
+The robot can recognize commands that are similar to those defined in the file, as we saw above.  
+When asked to “go to the left bottom”, it executes the most similar command, which is: "go to the bottom left".  
+However, if the command is significantly different, the robot returns an error.  
