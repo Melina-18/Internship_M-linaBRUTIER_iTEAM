@@ -109,6 +109,18 @@ By executing this command: **"go to the bottom left"**
 We get :  
 <img width="1600" height="900" alt="WhatsApp Image 2026-05-26 at 17 08 07" src="https://github.com/user-attachments/assets/53f238d3-18aa-415d-b1f2-e2fdb5465567" />
 
-
 By executing this command: **"go to the center"**  
 We get :  
+
+---
+
+The problem :  
+When I run this command: **“go to the right”**, the Ollama AI analyzes this instruction and compares it with the resources stored in the robot_ollama file. This command most closely matches “go right.”  
+That is why the robot moves straight ahead instead of to the right. Its initial position was in the center, and it moved to the position x=10 as specified in the file.  
+
+<img width="1600" height="900" alt="image" src="https://github.com/user-attachments/assets/3412ad58-a59e-4bbd-a432-442e275690b1" />
+<img width="1600" height="900" alt="image" src="https://github.com/user-attachments/assets/0c466e54-e106-46f9-9aa5-a97d227dc7e9" />
+
+
+Then I execute this command : **"go to the bottom left"**, we get  
+<img width="1600" height="900" alt="WhatsApp Image 2026-05-27 at 12 42 22" src="https://github.com/user-attachments/assets/e590011a-6bb9-4273-b154-74e6f91b533a" />
