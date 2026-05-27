@@ -27,3 +27,6 @@ I told the robot to move forward 20 meters. It carried out the command while avo
 And then I asked him to move 15 meters to the right, avoiding the obstacles as well: 
 <img width="792" height="483" alt="image" src="https://github.com/user-attachments/assets/05d800d5-1274-4a4c-8586-99d3f8c7ba09" />
 
+
+
+All the information are here : https://docs.google.com/spreadsheets/d/1-6duBYCitYhOyMOqxkJYvgAtaIOxp_dguyQsaNE2UYo/edit?gid=0#gid=0 
