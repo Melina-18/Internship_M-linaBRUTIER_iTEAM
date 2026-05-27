@@ -100,17 +100,20 @@ if __name__ == "__main__":
 ```
 
 By executing this command: **"go to the top right"**  
+Its initial position : 
+<img width="1600" height="900" alt="WhatsApp Image 2026-05-27 at 12 25 02" src="https://github.com/user-attachments/assets/7f81f651-6a51-47db-b26c-b1310c8a0bd8" />
+
 We get :  
-<img width="1600" height="900" alt="WhatsApp Image 2026-05-26 at 17 04 50" src="https://github.com/user-attachments/assets/08cc4015-6f29-4407-b05d-87691f833738" />
+<img width="1600" height="900" alt="WhatsApp Image 2026-05-27 at 14 51 55" src="https://github.com/user-attachments/assets/969dad03-6990-410b-9a80-f69a10d936f5" />
 
 
-
-By executing this command: **"go to the bottom left"**  
+Then I execute this command : **"go to the bottom left"**, we get  
 We get :  
-<img width="1600" height="900" alt="WhatsApp Image 2026-05-26 at 17 08 07" src="https://github.com/user-attachments/assets/53f238d3-18aa-415d-b1f2-e2fdb5465567" />
+<img width="1600" height="900" alt="WhatsApp Image 2026-05-27 at 14 55 22" src="https://github.com/user-attachments/assets/8efed16b-e358-4634-86e8-2b3e4f45e4be" />
 
 By executing this command: **"go to the center"**  
 We get :  
+<img width="1600" height="900" alt="image" src="https://github.com/user-attachments/assets/0b9c5418-05e1-4bda-8557-07dea07402c4" />  
 
 ---
 
