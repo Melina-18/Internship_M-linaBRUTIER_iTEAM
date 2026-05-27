@@ -18,3 +18,10 @@
 Here, the robot paused halfway through the journey before resuming its journey to reach its final destination 
 <img width="1600" height="900" alt="WhatsApp Image 2026-05-22 at 11 27 13" src="https://github.com/user-attachments/assets/2c0e625d-1941-4a20-adcf-22645fd800fc" />
 
+
+I told the robot to move forward 20 meters. It carried out the command while avoiding all the walls.  
+<img width="1090" height="613" alt="image" src="https://github.com/user-attachments/assets/9f39d131-0037-49c5-b641-95ee8bd2c000" />
+
+And then I asked him to move 15 meters to the right, avoiding the obstacles as well: 
+<img width="792" height="483" alt="image" src="https://github.com/user-attachments/assets/05d800d5-1274-4a4c-8586-99d3f8c7ba09" />
+
