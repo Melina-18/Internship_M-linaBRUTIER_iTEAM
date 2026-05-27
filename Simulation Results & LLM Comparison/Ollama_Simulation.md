@@ -1,4 +1,7 @@
 ## Ollama Simulation
+In all subsequent frames, the robot successfully avoids the walls and takes the shortest path  
+
+---
 
 In this file **robot_ollama**, we have this code : 
 ```cmd
