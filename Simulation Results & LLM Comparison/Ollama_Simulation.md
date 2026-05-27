@@ -99,13 +99,16 @@ if __name__ == "__main__":
     main()
 ```
 
-By executing this command: **"go to the top right"**
+By executing this command: **"go to the top right"**  
+We get :  
 <img width="1600" height="900" alt="WhatsApp Image 2026-05-26 at 17 04 50" src="https://github.com/user-attachments/assets/08cc4015-6f29-4407-b05d-87691f833738" />
 
-We get : 
-<img width="1600" height="900" alt="WhatsApp Image 2026-05-26 at 17 04 50" src="https://github.com/user-attachments/assets/09edde4b-48cb-4e3d-b77a-31988a94fbd9" />
 
-By executing this command: **"go to the bottom left"**
+
+By executing this command: **"go to the bottom left"**  
+We get :  
 <img width="1600" height="900" alt="WhatsApp Image 2026-05-26 at 17 08 07" src="https://github.com/user-attachments/assets/53f238d3-18aa-415d-b1f2-e2fdb5465567" />
 
 
+By executing this command: **"go to the center"**  
+We get :  
