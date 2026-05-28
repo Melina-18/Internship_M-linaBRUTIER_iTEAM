@@ -72,7 +72,7 @@ ros2 launch rosbridge_server rosbridge_websocket_launch.xml
 ```bash
 nano robot_ollama.py
 ```
-Copy the code into the file robot_ollama
+Copy the code into the file robot_ollama  
 Ctrl+O, Entrée, Ctrl+X, and lanch :
 ```bash
 python3 robot_ollama.py
