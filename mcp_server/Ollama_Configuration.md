@@ -77,3 +77,10 @@ Ctrl+O, Entrée, Ctrl+X, and lanch :
 ```bash
 python3 robot_ollama.py
 ```
+
+**Display the contents of the file :**
+```bash
+cat robot_ollama.py
+```
+
+
