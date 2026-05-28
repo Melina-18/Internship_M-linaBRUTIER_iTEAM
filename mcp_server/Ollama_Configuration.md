@@ -68,11 +68,11 @@ source /opt/ros/jazzy/setup.bash
 ros2 launch rosbridge_server rosbridge_websocket_launch.xml
 ```
 
-6. **Configure the folder with instruction**  
+6. **Set up the folder containing the robot's instructions**
 ```bash
 nano robot_ollama.py
 ```
-
+Copy the code into the file robot_ollama
 Ctrl+O, Entrée, Ctrl+X, and lanch :
 ```bash
 python3 robot_ollama.py
