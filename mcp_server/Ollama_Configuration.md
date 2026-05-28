@@ -28,7 +28,7 @@ sudo apt install python3-requests -y
 ```
 
 
-### Connecting ChatGPT to the ROS 2 Server to Run the Simulation
+### Connecting Ollama to the ROS 2 Server to Run the Simulation
 #### 1. Windows PC Setup (Start the LLM interface)
 
 In Windows Terminal : 
