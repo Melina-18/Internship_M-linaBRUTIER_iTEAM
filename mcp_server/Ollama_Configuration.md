@@ -70,10 +70,10 @@ In Windows Terminal :
 
 6. **Configure the folder with instruction**  
 ```bash
-    nano robot_ollama.py
-   ```
+nano robot_ollama.py
+```
 
 Ctrl+O, Entrée, Ctrl+X, and lanch :
 ```bash
 python3 robot_ollama.py
- ```
+```
