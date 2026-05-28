@@ -40,33 +40,33 @@ In Windows Terminal :
 
 #### 2. Linux PC Setup (Robot & Rosbridge)
 1. **Check your graphics configuration** (optional, to ensure hardware acceleration is active):
-   ```bash
-   glxinfo -B
-   ```
+```bash
+glxinfo -B
+```
 
 2. **Launch the Gazebo world**
-   ```bash
-   ros2 launch robotnik_gazebo_ignition spawn_world.launch.py world:=demo gui:=true
-   ```
+```bash
+ros2 launch robotnik_gazebo_ignition spawn_world.launch.py world:=demo gui:=true
+```
 
 3. **Spawn the robot and start RViz (in a new terminal):**
-   ```bash
-   ros2 launch robotnik_gazebo_ignition spawn_robot.launch.py robot_id:=robot robot:=rbsummit robot_model:=rbsummit run_rviz:=true low_performance_simulation:=false
-   ```
+```bash
+ros2 launch robotnik_gazebo_ignition spawn_robot.launch.py robot_id:=robot robot:=rbsummit robot_model:=rbsummit run_rviz:=true low_performance_simulation:=false
+```
 
 4. **Launch the sensor filters, localization, and navigation stacks (in separate terminals):**
-   ```bash
-   ros2 launch robotnik_simulation_bringup laser_filters.launch.py
-   ros2 launch robotnik_simulation_localization localization.launch.py
-   ros2 launch robotnik_simulation_navigation navigation.launch.py
-   ```
+```bash
+ros2 launch robotnik_simulation_bringup laser_filters.launch.py
+ros2 launch robotnik_simulation_localization localization.launch.py
+ros2 launch robotnik_simulation_navigation navigation.launch.py
+```
    
 5. **Launch the Rosbridge WebSocket server (in a new terminal):**
-   This server opens port 9090 to allow external interfaces and MCP servers to communicate with ROS 
-   ```bash
-   source /opt/ros/jazzy/setup.bash
-   ros2 launch rosbridge_server rosbridge_websocket_launch.xml
-   ```
+This server opens port 9090 to allow external interfaces and MCP servers to communicate with ROS 
+```bash
+source /opt/ros/jazzy/setup.bash
+ros2 launch rosbridge_server rosbridge_websocket_launch.xml
+```
 
 6. **Configure the folder with instruction**  
 ```bash
