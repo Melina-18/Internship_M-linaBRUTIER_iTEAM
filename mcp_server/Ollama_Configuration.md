@@ -32,10 +32,10 @@ sudo apt install python3-requests -y
 #### 1. Windows PC Setup (Start the LLM interface)
 
 In Windows Terminal : 
-    ```cmd
-    $env:OLLAMA_HOST="0.0.0.0:11434"
-    ollama serve
-    ```
+```cmd
+$env:OLLAMA_HOST="0.0.0.0:11434"  
+ollama serve
+```
 
 
 #### 2. Linux PC Setup (Robot & Rosbridge)
