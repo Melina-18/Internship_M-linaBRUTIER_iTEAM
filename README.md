@@ -10,7 +10,7 @@ IP address (command :  hostname -I) : 192.168.10.108
 Installation of LLM --> Claude Desktop / Chat GPT / Local LLM (Ollama)
 
 
-
+```text
 [ Windows PC ]                                      [ Linux PC ]
 +-------------------+                              +----------------------+
 |  Claude Desktop   |                              |   Rosbridge Server   |
