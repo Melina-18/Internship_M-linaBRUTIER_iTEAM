@@ -5,7 +5,6 @@ I wanted the robot to intercept movement commands that were too high and apply a
 
 
 Following the instructions in the *Robotnik development manual*, I realised that I shouldn’t modify any files within the robot’s interface. I therefore created a folder alongside it, allowing me to modify or create files that the robot will be able to access.  
-I created a file containing the following code: 
 
 
 
