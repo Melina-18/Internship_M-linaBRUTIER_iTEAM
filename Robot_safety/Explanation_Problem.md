@@ -16,9 +16,9 @@ During our initial tests, I configured the safety filter (robotnik_safety_filter
 However, dynamic analysis of the ROS 2 graph showed that in the simulation’s factory architecture, the Nav2 autonomous navigation node sent its commands directly to the multiplexer’s official input topic: /robot/robotnik_base_control/cmd_vel. 
 The twist_mux node received this stream in real time and relayed it directly to the motors in Gazebo, with no intermediate filter to stop it. 
 Since using Nav2 is mandatory during simulations to prevent the robot from colliding with obstacles, my safety filter was completely bypassed.To resolve this, I tried to insert our filter by modifying the launch file (safety_launch.py) and applying topic remappings. 
-However, because the factory configuration of the robot's multiplexer was hardwired to the original topics, the ROS 2 graph did not route the commands through my filter. The virtual robot’s drive base remained firmly and directly connected to Nav2.
+However, because the factory configuration of the robot's multiplexer was hardwired to the original topics, the ROS 2 graph did not route the commands through my filter. The virtual robot’s drive base remained firmly and directly connected to Nav2.  
 
 
-
-
+**Solution:**
+I’m now going to try out a new method: inserting our filter directly into the robot’s multiplexing node (twist_mux) and assigning it a higher priority.
 
