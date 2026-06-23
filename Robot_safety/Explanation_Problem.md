@@ -1,4 +1,4 @@
-# Summary of the Situation and Bottlenecks in the Nav2 Architecture / Security
+# Summary of the Situation and Constraints in the Nav2 Architecture / Security
 
 The aim was to develop and test a ROS 2 safety node (robotnik_safety_filter, coded in safety_node.py) responsible for monitoring the robot’s speed commands and other safety rules. 
 I wanted the robot to intercept movement commands that were too high and apply a strict limit of $0.4\text{ m/s}$, thereby ensuring its physical safety.
