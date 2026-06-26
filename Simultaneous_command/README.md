@@ -21,3 +21,18 @@ The robot followed its path correctly, and it even hit its speed limit because I
 
 
 The result : 
+<img width="1600" height="900" alt="image" src="https://github.com/user-attachments/assets/74b54515-53f0-4bd6-b948-c029353efb4b" />
+<img width="1600" height="900" alt="image" src="https://github.com/user-attachments/assets/d21bc396-76cd-4092-b4a9-6c83200ada04" />
+<img width="1600" height="900" alt="image" src="https://github.com/user-attachments/assets/8617c5d5-9dab-4182-87e2-820bb80cade2" />
+<img width="1600" height="900" alt="image" src="https://github.com/user-attachments/assets/9a1a11eb-15aa-44f1-9301-a002bdc8fa82" />
+<img width="1600" height="900" alt="image" src="https://github.com/user-attachments/assets/fea97bc5-a500-4432-974c-c4ca946d52b5" />
+<img width="1600" height="900" alt="image" src="https://github.com/user-attachments/assets/37459738-3ce4-455a-8b59-9f9b31b83ab1" />
+<img width="1600" height="900" alt="image" src="https://github.com/user-attachments/assets/cf035407-333e-4eb3-a942-5853afcbe1a0" />
+<img width="1600" height="900" alt="image" src="https://github.com/user-attachments/assets/0bd6e687-ba9b-41c5-a2db-52f82296c156" />
+
+
+
+
+
+  
+
