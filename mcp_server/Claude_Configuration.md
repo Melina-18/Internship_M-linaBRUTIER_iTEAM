@@ -56,7 +56,8 @@ This server opens port 9090 to allow external interfaces and MCP servers to comm
 
 7. **Start the LLM interface:**
  
-Once the simulation is fully running, launch Claude Desktop to start interacting with the robot.
+Once the simulation is fully running, launch Claude Desktop to start interacting with the robot.  
+Don't forget that both computers must be on the same network (Wi-Fi).
 
 8. **Connecting Claude Desktop to the Robot**
 
