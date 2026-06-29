@@ -40,7 +40,7 @@ Ensure that your ROS 2 simulation and the Rosbridge WebSocket server are up and 
    ros2 launch robotnik_simulation_navigation navigation.launch.py
    ```
    
-5. **Launch the Rosbridge WebSocket server (in a new terminal):**
+5. **Launch the Rosbridge WebSocket server (in a new terminal):**  
    This server opens port 9090 to allow external interfaces and MCP servers to communicate with ROS 
    ```bash
    source /opt/ros/jazzy/setup.bash
@@ -71,7 +71,8 @@ ngrok http --url=untreated-cosmic-underfoot.ngrok-free.dev 127.0.0.1:9000
 
 #### 3. Connecting Chat GPT to the Robot
 
-Once the simulation and Chat GPT are running, you need to instruct the LLM to connect to your local ROS 2 environment. 
+Once the simulation and Chat GPT are running, you need to instruct the LLM to connect to your local ROS 2 environment.  
+Don't forget that both computers must be on the same network (Wi-Fi).  
 Send the following prompt to **Chat GPT**:
 > "Please connect to my ROS 2 robot using this IP address: `ws://192.168.10.108:9090`."
 
