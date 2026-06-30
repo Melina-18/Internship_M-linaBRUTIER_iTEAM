@@ -20,4 +20,7 @@ The robot's navigation failed; it got stuck in front of the obstacle but did not
 <img width="1600" height="900" alt="image" src="https://github.com/user-attachments/assets/7e9c50d9-5e34-4710-9f34-c84045b64c21" />
 
 
+The robot has a good comportement because it avoid obstacles but the problem is that it got stuck in front of the obstacle. 
+
+
 
