@@ -1,4 +1,4 @@
-# Simultaneous command - Test 1
+# Simultaneous command - Test 2
 
 
 I told the LLM Claude : " I want the robot to move forward 5 meters, then head as far to the left as possible, and then go to the top-right corner. "  
