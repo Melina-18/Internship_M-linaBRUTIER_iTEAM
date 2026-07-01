@@ -29,7 +29,7 @@ The robot then headed toward the upper-right corner. However, this corner was ch
 <img width="1600" height="900" alt="image" src="https://github.com/user-attachments/assets/29faf2db-984d-4c89-8d99-e46aa66069f8" />
 <img width="1600" height="900" alt="image" src="https://github.com/user-attachments/assets/55796105-7a54-45f8-a24b-bea953a27540" />
 <img width="1600" height="900" alt="image" src="https://github.com/user-attachments/assets/325f8cfd-b5af-4f4b-b926-ecd9ad95a98a" />
-<img width="1600" height="900" alt="image" src="https://github.com/user-attachments/assets/ce26ced7-753f-4d6c-ac56-1605c1cbf9c7" />
+<img width="1600" height="900" alt="image" src="https://github.com/user-attachments/assets/313b9ded-860c-4c3d-90ca-887a3dcf4655" />
 
 
 
