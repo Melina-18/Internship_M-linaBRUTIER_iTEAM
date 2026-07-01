@@ -1,4 +1,4 @@
-# Obstacles on the robot's path 
+# Avoid obstacles - Test 1
 
 We placed a cube in the robot's path to analyze its reactions. 
 
