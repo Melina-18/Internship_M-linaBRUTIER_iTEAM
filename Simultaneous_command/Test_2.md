@@ -33,6 +33,6 @@ The robot then headed toward the upper-right corner. However, this corner was ch
 
 
 
-Conclusion : 
-The robot successfully completed all the tasks it was supposed to perform; it took some time, but it was done without any errors. 
+**Conclusion**  
+The robot successfully completed all the tasks it was supposed to perform; it took some time, but it was done without any errors.  
 You just have to be careful when talking to him about right and left, depending on his orientation and the previous step. 
