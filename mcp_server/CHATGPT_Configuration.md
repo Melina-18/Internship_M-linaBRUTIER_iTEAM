@@ -55,7 +55,7 @@ Open **Command Prompt as Administrator** and run the following command to route 
 netsh interface portproxy add v4tov4 listenport=9090 listenaddress=127.0.0.1 connectport=9090 connectaddress=192.168.10.108
 ```
 
-##### Step B: Port Forwarding (Command Prompt - Admin)
+##### Step B: In PowerShell
 Open **PowerShell** and set the environment variables to point to your Rosbridge server, then launch the ROS MCP server:
 ```cmd
 $env:ROSBRIDGE_HOST="192.168.10.108"; $env:ROSBRIDGE_PORT="9090"; uvx ros-mcp --transport streamable-http --host 127.0.0.1 --port 9000
