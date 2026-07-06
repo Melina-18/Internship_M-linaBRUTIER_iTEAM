@@ -34,4 +34,5 @@ This script will perform three main tasks:
 
 **Status Management (Battery / Obstacles):** The script can read the battery status. If it drops below 15%, it can block the AI’s movement commands and force the robot to stop.
 
+**Stop Emergency**
 
