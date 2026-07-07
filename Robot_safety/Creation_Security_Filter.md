@@ -21,6 +21,8 @@ source install/setup.bash
 ros2 launch mcp_robot_safety safety_navigation.launch.py      #remplaces the : ros2 launch robotnik_simulation_navigation navigation.launch.py
 ```
 
+In the Terminal, you can see that the filter has indeed been started : 
+<img width="768" height="448" alt="image" src="https://github.com/user-attachments/assets/3761758b-f6ee-4ca5-bbae-301f85905fde" />
 
 
 Tests Conducted :  
