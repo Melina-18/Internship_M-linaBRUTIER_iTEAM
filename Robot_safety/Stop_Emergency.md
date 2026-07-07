@@ -14,8 +14,7 @@ The robot stops immediately
 
 
 
-To launch again the filter :   
-I execute this command :   
+To launch again the filter, I execute this command :   
 ```bash 
 ros2 topic pub /robot/safety_filter/emergency_stop std_msgs/msg/Bool "data: false" --once
 ```
