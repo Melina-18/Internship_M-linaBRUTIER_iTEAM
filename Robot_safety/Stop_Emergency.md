@@ -3,7 +3,7 @@
 I add stop emergency at the security filter.   
 
 
-When i execute this command :   
+When i execute this command in nex terminal :   
 ```bash 
 ros2 topic pub /robot/safety_filter/emergency_stop std_msgs/msg/Bool "data: true" --once
 ```
