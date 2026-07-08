@@ -28,11 +28,23 @@ We are going to create a new Python script (a ROS node) to add to the robot's co
 ### What will this Python file do?  
 This script will perform three main tasks:  
 
-**The speed “saturator”:** If the AI instructs the robot to move at a linear speed of $v_x = 3.0\text{ m/s}$, the script will intercept the message, then check if it exceeds the safety limit (e.g., $0.5\text{ m/s}$), and automatically adjust the value to $0.5\text{ m/s}$ before sending it to the robot.  
+**The speed “saturator”:** If the AI instructs the robot to move at a linear speed of $v_x = 0.6\text{ m/s}$, the script will intercept the message, then check if it exceeds the safety limit (e.g., $0.4\text{ m/s}$), and automatically adjust the value to $0.4\text{ m/s}$ before sending it to the robot.   
+The robot velocity is clamped when moving forward(0.4 m/s), backward(0.4 m/s), and rotating(0.8 m/s).  
+```text
+Nav2 publishes 0.6 m/s on cmd_vel_raw
+       ↓
+safety filter receives the command
+       ↓
+filter detects 0.6 > 0.4 → replaces with 0.4
+       ↓
+publishes 0.4 m/s on cmd_vel
+       ↓
+robotnik_base_control receives 0.4 m/s → motors
+ ```
 
-**The Watchdog:** If the connection with the AI suddenly drops while the robot is moving, the robot risks continuing straight ahead indefinitely. The script will check every second to see if it is receiving a signal from the AI. If the AI “stops communicating,” the script immediately issues an emergency stop command ($0\text{ m/s}$).  
+**Stop Emergency :** An emergency stop feature has been built into the safety filter: by publishing ‘True’ to the /robot/safety_filter/emergency_stop topic, all motion commands are immediately blocked, and the robot continuously receives a speed of zero until a ”False" signal is published to resume control.
 
-**Status Management (Battery / Obstacles):** The script can read the battery status. If it drops below 15%, it can block the AI’s movement commands and force the robot to stop.
 
-**Stop Emergency**
 
+
+This safety filter only works when the robot is moving via Nav2, because it is integrated directly into the navigation pipeline—commands must pass through the filter before reaching the motors. Any command sent outside of Nav2 (direct teleoperation, raw command via `cmd_vel`) will not pass through this filter and therefore will not be speed-limited.
