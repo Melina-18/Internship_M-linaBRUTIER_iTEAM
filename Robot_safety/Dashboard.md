@@ -23,7 +23,8 @@ When the robot was moving, the dashboard correctly displayed its speed :
 And then the robot stopped because I had told it to move forward 5 meters :   
 <img width="1600" height="900" alt="image" src="https://github.com/user-attachments/assets/6bc57464-0641-4826-9c03-592ec6239c3f" />
 
-
+For the anglular speed, it's the same : 
+<img width="1600" height="900" alt="image" src="https://github.com/user-attachments/assets/36e56863-0192-412e-998b-44588329e8f4" />
 
 
 ---
@@ -32,8 +33,8 @@ Problems encountered:
 Sometimes during these tests, the robot moved jerkily and at a very, very slow speed. After doing some research, I concluded that the problem was caused by the machine’s CPU load, which was causing the jerkiness. To resolve this, restarting the PC or closing RviZ was the best solution for continuing my simulations. 
 
 
-
-
+### Conclusion
+During these tests, the main source of error is that the dashboard updates the information every 5 seconds. I made this choice because otherwise the terminal would be overwhelmed with information. However, for more precise testing, this interval needs to be reduced. 
 
 
 
