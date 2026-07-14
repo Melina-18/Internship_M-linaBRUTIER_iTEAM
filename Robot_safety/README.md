@@ -29,7 +29,7 @@ We are going to create a new Python script (a ROS node) to add to the robot's co
 This script will perform three main tasks:  
 
 **The speed “saturator”:** If the AI instructs the robot to move at a linear speed of $v_x = 0.6\text{ m/s}$, the script will intercept the message, then check if it exceeds the safety limit (e.g., $0.4\text{ m/s}$), and automatically adjust the value to $0.4\text{ m/s}$ before sending it to the robot.   
-The robot velocity is clamped when moving forward(0.4 m/s), backward(0.4 m/s), and rotating(0.8 m/s).  
+The robot velocity is clamped when moving forward(0.4 m/s), backward(0.4 m/s), and rotating(0.8 rad/s).  
 ```text
 Nav2 publishes 0.6 m/s on cmd_vel_raw
        ↓
