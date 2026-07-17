@@ -1,22 +1,31 @@
-# Connexion LLM ↔ RB-THERON
+# Connection LLM ↔ RB-THERON
 
-We describe the connection between Claude Desktop (via an MCP server + rosbridge) and the RB-THERON physical robot, following a simulation-based development phase on RB-SUMMIT.
- I ran Rosbridge directly on the robot's computer (THER0), which is accessible on the university network via the IP address 10.45.26.22:9090. 
+This describes the connection between Claude Desktop (via an MCP server + rosbridge) and the RB-THERON physical robot, following a simulation-based development phase on the RB-SUMMIT.
 
-$$\text{Claude Desktop (Windows)} \longrightarrow \text{MCP Server (ros-mcp-theron} \longrightarrow \text{ws://10.45.26.22:9090} \longrightarrow \text{rosbridge (in THERO) \longrightarrow \text{robot's native ROS2 graph}$$
+Rosbridge runs directly on the robot's onboard computer (`THER0`), which is reachable on the university network via the IP address `10.45.26.22:9090`.
 
-I added this code to my "claude_desktop_config.json" folder : 
+```
+Claude Desktop (Windows) → MCP Server (ros-mcp-theron) → ws://10.45.26.22:9090 → rosbridge (on THER0) → robot's native ROS2 graph
+```
+
+I added the following entry to my `claude_desktop_config.json`:
+
 ```json
 "ros-mcp-theron": {
   "command": "uvx",
   "args": ["ros-mcp", "--transport=stdio"],
   "env": {
-    "ROSBRIDGE_HOST": "10.45.26.22",    #(the robot's IP address)
+    "ROSBRIDGE_HOST": "10.45.26.22",
     "ROSBRIDGE_PORT": "9090"
   }
 }
 ```
 
+> `ROSBRIDGE_HOST` is the robot's IP address on the university network.
+
+## Validation
+
+Once rosbridge was running on `THER0` and the config above was loaded, Claude Desktop successfully listed all ~140 native topics of the robot (navigation, motor control, sensors, system state, TF), confirming the full chain works end-to-end.
 
 
 
