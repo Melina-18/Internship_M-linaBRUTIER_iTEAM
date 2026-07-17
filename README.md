@@ -25,4 +25,5 @@ Installation of LLM --> Claude Desktop / Chat GPT / Local LLM (Ollama)
 
 ---
 
-
+Claude Desktop successfully established a connection with the robot : 
+<img width="1182" height="878" alt="image" src="https://github.com/user-attachments/assets/7731ba7a-a6ff-4979-b4d1-f380a9eaab90" />
