@@ -23,6 +23,11 @@ $$\text{Claude Desktop (Local)} \longrightarrow \text{MCP Server} \longrightarro
 
 ```
 
+Claude Desktop successfully established a connection with the robot : 
+<img width="1182" height="878" alt="image" src="https://github.com/user-attachments/assets/7731ba7a-a6ff-4979-b4d1-f380a9eaab90" />  
+
+---
+
 ### Connecting Claude to the ROS 2 Server to Run the Simulation
 
 Follow these steps to launch the simulation environment and connect it to the LLM:
