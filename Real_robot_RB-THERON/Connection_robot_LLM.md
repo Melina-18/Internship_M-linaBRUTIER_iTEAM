@@ -27,5 +27,6 @@ I added the following entry to my `claude_desktop_config.json`:
 
 Once rosbridge was running on `THER0` and the config above was loaded, Claude Desktop successfully listed all ~140 native topics of the robot (navigation, motor control, sensors, system state, TF), confirming the full chain works end-to-end.
 
+<img width="1183" height="874" alt="image" src="https://github.com/user-attachments/assets/150dc0ca-0669-4332-89f4-171e6c27457b" />
 
 
