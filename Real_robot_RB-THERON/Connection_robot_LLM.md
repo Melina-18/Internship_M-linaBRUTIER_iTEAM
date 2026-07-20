@@ -47,3 +47,6 @@ The robot is now connected; next, we run rosbridge on this terminal to communica
 ros2 launch rosbridge_server rosbridge_websocket_launch.xml
 ```
 We can now run Claude and run our tests. 
+> "Please connect to my ROS 2 robot using this IP address: `ws://10.45.26.22:9090`."
+
+
