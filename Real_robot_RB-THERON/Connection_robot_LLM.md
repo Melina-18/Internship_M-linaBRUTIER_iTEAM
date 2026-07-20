@@ -30,3 +30,20 @@ Once rosbridge was running on `THER0` and the config above was loaded, Claude De
 <img width="1183" height="874" alt="image" src="https://github.com/user-attachments/assets/150dc0ca-0669-4332-89f4-171e6c27457b" />
 
 
+---
+
+# On the Linux PC 
+To establish a connection between the robot and the Linux PC, start by turning on the robot, and then enter these commands in the Linux terminal: 
+```bash
+ping 10.45.26.22
+```
+then, Ctrl +C, then : 
+
+```bash
+ssh robot@10.45.26.22
+```
+The robot is now connected; next, we run rosbridge on this terminal to communicate with the Windows PC that hosts the LLM.
+```bash
+ros2 launch rosbridge_server rosbridge_websocket_launch.xml
+```
+We can now run Claude and run our tests. 
