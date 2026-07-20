@@ -44,6 +44,7 @@ ssh robot@10.45.26.22
 ```
 The robot is now connected; next, we run rosbridge on this terminal to communicate with the Windows PC that hosts the LLM.
 ```bash
+source /opt/ros/jazzy/setup.bash  
 ros2 launch rosbridge_server rosbridge_websocket_launch.xml
 ```
 We can now run Claude and run our tests. 
