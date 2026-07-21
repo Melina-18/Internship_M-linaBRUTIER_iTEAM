@@ -18,7 +18,7 @@ The command here was sent using `navigate_to_pose` (a continuous local controlle
 However, my robot was able to move backward using the cmd_vel command, because in this case a raw velocity is sent directly to the wheels, and there are no safety measures in place to avoid obstacles. When using this command, Claude proved to be very protective, ensuring that there was no risk of encountering an obstacle during movement.  
 
 The robot also performed well when I asked it to go to a specific set of coordinates.  
-![Démo du projet](./assets/robot.gif)
+![Démo du projet](./robot.gif)
 
 ### Conclusion
 During these tests, I only made small movements of up to 1 meter.
