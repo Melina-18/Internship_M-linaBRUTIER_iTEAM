@@ -14,7 +14,7 @@ From a technical standpoint, we had noticed that on the RB-SUMMIT, an inspection
 
 However, on the RB-THERON, there is a twist_mux node that allows us to prioritize the actions sent to the robot and thus control those actions in a highly secure manner.  
 
-<img width="1090" height="675" alt="image" src="https://github.com/user-attachments/assets/3262d517-4a15-40fe-a53e-e43df2b4de12" />
+<img width="973" height="383" alt="rbtherongraphe" src="https://github.com/user-attachments/assets/c2d4f5c8-a1e2-440a-9ed5-8b1f4798477e" />
 
 This photo shows the priorities and the control chain.  
 
