@@ -1,0 +1,16 @@
+# Configuration du multiplexeur (twist_mux)
+topics:
+  - name: "pad_teleop"
+    topic: "/robot/pad_teleop/cmd_vel_unstamped"
+    timeout: 0.5
+    priority: 100
+
+  - name: "safety_filter"
+    topic: "/robot/safety_filter/cmd_vel"   # <--- TON FILTRE DE SÉCURITÉ
+    timeout: 0.5
+    priority: 40
+
+  - name: "move_base"
+    topic: "/robot/robotnik_base_control/cmd_vel" # <--- LA NAVIGATION AUTONOME NAV2
+    timeout: 0.5
+    priority: 20
